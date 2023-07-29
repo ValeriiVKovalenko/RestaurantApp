@@ -1,16 +1,29 @@
 package app.menu.cuisine;
 
-import java.math.BigDecimal;
+import app.Dessert;
+import app.MainCourse;
 
-public abstract class Cuisine {
-    protected String name;
-    protected Cuisine(String name) {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cuisine<T extends Enum<T> & MainCourse, U extends Enum<U> & Dessert>{
+    private final List<T> mainCourseCuisines;
+    private final List<U> dessertCuisines;
+    private final String name;
+
+    public Cuisine(String name) {
         this.name = name;
+        mainCourseCuisines = new ArrayList<>();
+        dessertCuisines = new ArrayList<>();
     }
 
-    public abstract MainCourse createMainCourse(String name, BigDecimal price);
+    public void addMainCourse(T mainCourse) {
+        mainCourseCuisines.add(mainCourse);
+    }
 
-    public abstract Dessert createDessert(String name, BigDecimal price);
+    public void addDessert(U dessert) {
+        dessertCuisines.add(dessert);
+    }
 
     public String getName() {
         return name;
@@ -19,7 +32,9 @@ public abstract class Cuisine {
     @Override
     public String toString() {
         return "Cuisine{" +
-               "name='" + name + '\'' +
+               "mainCourseCuisines=" + mainCourseCuisines +
+               ", dessertCuisines=" + dessertCuisines +
+               ", name='" + name + '\'' +
                '}';
     }
 }

@@ -1,12 +1,10 @@
-package app.menu.cuisine;
+package app.menu;
 
-
-import app.menu.MenuItem;
 
 import java.math.BigDecimal;
 
-public class MainCourse extends MenuItem {
-    protected MainCourse(String name, BigDecimal price) {
+public class MainCourseItem extends MenuItem {
+    protected MainCourseItem(String name, BigDecimal price) {
         super(name, price);
     }
 

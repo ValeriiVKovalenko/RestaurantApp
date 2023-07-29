@@ -4,30 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c3b487-d1e4-4ce4-919a-8637586e433c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FoodOrderingSystemApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/executor/ProgramExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/Dessert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/Lunch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/MainCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/MenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/Cuisine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/ItalianCuisine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/MexicanCuisine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/PolishCuisine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/order/OrderBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/order/OrderBuilderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ui/UI.java" afterDir="false" />
+    <list default="true" id="99c3b487-d1e4-4ce4-919a-8637586e433c" name="Changes" comment="gitignore test">
+      <change afterPath="$PROJECT_DIR$/src/app/Dessert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/MainCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/DrinkItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/drinks/DrinkAdditives.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/drinks/Drinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/italian/ItalianCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/italian/ItalianDessert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/mexican/MexicanCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/mexican/MexicanDessert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/polish/PolishCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/menu/cuisine/polish/PolishDessert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/repository/CuisineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/repository/DrinkAdditivesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/repository/DrinksRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/Drink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/cuisine/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/menu/cuisine/Cuisine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/cuisine/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/menu/DessertItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/cuisine/ItalianCuisine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/cuisine/MainCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/menu/MainCourseItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/cuisine/MexicanCuisine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/menu/cuisine/PolishCuisine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/order/OrderBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/order/OrderBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/order/OrderBuilderImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -56,6 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -65,7 +74,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="ProgramExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.executor.ProgramExecutor" />
       <module name="FoodOrderingSystemApp" />
@@ -73,8 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Test" />
+      <module name="FoodOrderingSystemApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.ProgramExecutor" />
       </list>
     </recent_temporary>
@@ -88,19 +111,46 @@
       <option name="presentableId" value="Default" />
       <updated>1690286909166</updated>
       <workItem from="1690286910423" duration="12733000" />
-      <workItem from="1690305472996" duration="4367000" />
+      <workItem from="1690305472996" duration="5312000" />
+      <workItem from="1690322533827" duration="39000" />
+      <workItem from="1690473825898" duration="3397000" />
+      <workItem from="1690497347859" duration="139000" />
+      <workItem from="1690536773773" duration="5202000" />
+      <workItem from="1690629298522" duration="11254000" />
     </task>
+    <task id="LOCAL-00001" summary="added restaurant app">
+      <option name="closed" value="true" />
+      <created>1690311444988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690311444988</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore test">
+      <option name="closed" value="true" />
+      <created>1690311530517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690311530517</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added restaurant app" />
+    <MESSAGE value="gitignore test" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/app/ui/UI.java</url>
-          <line>11</line>
+          <line>10</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
