@@ -1,52 +1,61 @@
 package app.repository;
 
-import app.menu.cuisine.Cuisine;
-import app.menu.cuisine.italian.ItalianCourse;
-import app.menu.cuisine.italian.ItalianDessert;
-import app.menu.cuisine.mexican.MexicanCourse;
-import app.menu.cuisine.mexican.MexicanDessert;
-import app.menu.cuisine.polish.PolishCourse;
-import app.menu.cuisine.polish.PolishDessert;
+import app.cuisine.*;
+import app.model_interface.CourseItem;
+import app.model_interface.DessertItem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CuisineRepository {
-    private final List<Cuisine<?, ?>> cuisines;
+    private final List<Cuisine> cuisines;
 
     public CuisineRepository() {
         cuisines = new ArrayList<>();
-        Cuisine<ItalianCourse, ItalianDessert> italianCuisine = new Cuisine<>("Italian cuisine");
-        for (ItalianCourse value : ItalianCourse.values()) {
-            italianCuisine.addMainCourse(value);
-        }
 
-        for (ItalianDessert value : ItalianDessert.values()) {
-            italianCuisine.addDessert(value);
-        }
+        List<CourseItem> polishMainCourses = Arrays.asList(PolishCourse.values());
+        List<DessertItem> polishDesserts = Arrays.asList(PolishDessert.values());
+        cuisines.add(new Cuisine(polishMainCourses, polishDesserts, "polish"));
 
-        Cuisine<PolishCourse, PolishDessert> polishCuisine = new Cuisine<>("Polish cuisine");
-        for (PolishCourse value : PolishCourse.values()) {
-            polishCuisine.addMainCourse(value);
-        }
-        for (PolishDessert value : PolishDessert.values()) {
-            polishCuisine.addDessert(value);
-        }
+        List<CourseItem> mexicanCourses = Arrays.asList(MexicanCourse.values());
+        List<DessertItem> mexicanDesserts = Arrays.asList(MexicanDessert.values());
+        cuisines.add(new Cuisine(mexicanCourses, mexicanDesserts, "mexican"));
 
-        Cuisine<MexicanCourse, MexicanDessert> mexicanCuisine = new Cuisine<>("Mexican cuisine");
-        for (MexicanCourse value : MexicanCourse.values()) {
-            mexicanCuisine.addMainCourse(value);
-        }
-        for (MexicanDessert value : MexicanDessert.values()) {
-            mexicanCuisine.addDessert(value);
-        }
-
-        cuisines.add(italianCuisine);
-        cuisines.add(polishCuisine);
-        cuisines.add(mexicanCuisine);
+        List<CourseItem> italianCourses = Arrays.asList(ItalianCourse.values());
+        List<DessertItem> italianDesserts = Arrays.asList(ItalianDessert.values());
+        cuisines.add(new Cuisine(italianCourses, italianDesserts, "italian"));
     }
 
-    public List<Cuisine<?, ?>> findAll() {
+    public List<Cuisine> findAll() {
         return cuisines;
+    }
+
+    public CourseItem findMainCurseByName(String cuisine, String clientMainCurse) {
+        List<Cuisine> all = findAll();
+        for (Cuisine cuisine1 : all) {
+            if (cuisine1.getName().equalsIgnoreCase(cuisine)) {
+                for (CourseItem courseItem : cuisine1.getMainCourses()) {
+                    if (courseItem.getName().equalsIgnoreCase(clientMainCurse)) {
+                        return courseItem;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public DessertItem findDessertByName(String cuisine, String clientMainCurse) {
+        List<Cuisine> all = findAll();
+        for (Cuisine cuisine1 : all) {
+            if (cuisine1.getName().equalsIgnoreCase(cuisine)) {
+                for (DessertItem dessertItem : cuisine1.getDesserts()) {
+                    if (dessertItem.getName().equalsIgnoreCase(clientMainCurse)) {
+                        return dessertItem;
+                    }
+                }
+            }
+        }
+        return null;
     }
 }
